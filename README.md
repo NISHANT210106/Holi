@@ -33,12 +33,12 @@ Welcome to the Happy Holi Festival Website! This interactive website allows user
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/DevNishantHub/holi-festival-website.git
+   git clone https://github.com/DevNishantHub/Holi.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd holi-festival-website
+   cd Holi
    ```
 
 3. Open `index.html` in your preferred web browser to view the website locally.
