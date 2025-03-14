@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Holi - Festival of Colors | होली की हार्दिक शुभकामनाएं</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Hind:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Meta tags for social media sharing -->
+    <meta property="og:title" content="Happy Holi - Festival of Colors | होली की हार्दिक शुभकामनाएं">
+    <meta property="og:description" content="Celebrate Holi with personalized greetings! | होली के रंगों भरे संदेश के साथ अपने दोस्तों को शुभकामनाएं दें!">
+    <meta property="og:image" content="https://example.com/holi-preview.jpg">
+    <meta property="og:url" content="https://example.com">
+</head>
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <button id="englishBtn" class="lang-btn active">English</button>
+            <button id="hindiBtn" class="lang-btn">हिंदी</button>
+        </div>
+        
+        <div class="header">
+            <h1 class="title" data-en="Happy Holi" data-hi="होली की हार्दिक शुभकामनाएं">Happy Holi <span class="splash">🎨</span></h1>
+            <h2 class="subtitle" data-en="The Festival of Colors" data-hi="रंगों का त्योहार">The Festival of Colors</h2>
+        </div>
+        
+        <div class="main-content">
+            <div class="form-section">
+                <div class="input-group">
+                    <label for="userName" data-en="Your Name:" data-hi="आपका नाम:">Your Name:</label>
+                    <input type="text" id="userName" placeholder="Enter your name" data-en-placeholder="Enter your name" data-hi-placeholder="अपना नाम दर्ज करें">
+                </div>
+                <div class="input-group">
+                    <label for="friendName" data-en="Friend's Name:" data-hi="दोस्त का नाम:">Friend's Name:</label>
+                    <input type="text" id="friendName" placeholder="Enter friend's name" data-en-placeholder="Enter friend's name" data-hi-placeholder="दोस्त का नाम दर्ज करें">
+                </div>
+                <div class="input-group">
+                    <label for="templateSelect" data-en="Select Template:" data-hi="टेम्पलेट चुनें:">Select Template:</label>
+                    <select id="templateSelect">
+                        <option value="template1" data-en="Colorful Splash" data-hi="रंगीन छींटे">Colorful Splash</option>
+                        <option value="template2" data-en="Gulal Celebration" data-hi="गुलाल उत्सव">Gulal Celebration</option>
+                        <option value="template3" data-en="Water Balloons" data-hi="पानी के गुब्बारे">Water Balloons</option>
+                        <option value="template4" data-en="Holika Dahan" data-hi="होलिका दहन">Holika Dahan</option>
+                        <option value="template5" data-en="Dancing Colors" data-hi="नाचते रंग">Dancing Colors</option>
+                    </select>
+                </div>
+                <button id="generateBtn" class="btn" data-en="Generate Greeting" data-hi="शुभकामना बनाएं">Generate Greeting</button>
+            </div>
+            
+            <div class="preview-section" id="previewSection">
+                <div class="greeting-card" id="greetingCard">
+                    <div class="indian-pattern top-pattern"></div>
+                    <div class="greeting-header">
+                        <div class="color-splash color-splash-1"></div>
+                        <div class="color-splash color-splash-2"></div>
+                        <div class="color-splash color-splash-3"></div>
+                        <div class="color-splash color-splash-4"></div>
+                        <div class="color-splash color-splash-5"></div>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%23FF9933' stroke='%23138808' stroke-width='2'/%3E%3Cpath d='M50 10 A40 40 0 0 1 50 90 A40 40 0 0 1 50 10Z' fill='%23FF9933' stroke='none'/%3E%3Cpath d='M50 10 A40 40 0 0 0 50 90 A40 40 0 0 0 50 10Z' fill='%23FFFFFF' stroke='none'/%3E%3Cpath d='M50 10 A40 40 0 0 1 50 90 A40 40 0 0 1 50 10Z' fill='%23138808' stroke='none' opacity='0.5'/%3E%3C/svg%3E" class="indian-flag" alt="Indian colors">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50,20 Q80,50 50,80 Q20,50 50,20 Z' fill='%23FF9933' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E" class="rangoli-decor" alt="Rangoli">
+                    </div>
+                    <h2 class="greeting-title" data-en="Happy Holi!" data-hi="होली की हार्दिक शुभकामनाएं!">Happy Holi!</h2>
+                    <p class="greeting-message" id="greetingMessage" data-en="May your life be as colorful as the festival of Holi!" data-hi="आपका जीवन होली के त्योहार की तरह रंगीन हो!">May your life be as colorful as the festival of Holi!</p>
+                    <div class="greeting-footer">
+                        <p data-en="From:" data-hi="किसकी ओर से:">From: <span id="senderName">Your Name</span></p>
+                        <p data-en="To:" data-hi="किसको:">To: <span id="receiverName">Friend's Name</span></p>
+                    </div>
+                    <div class="indian-pattern bottom-pattern"></div>
+                    <div class="website-link">HoliFestival.com</div>
+                </div>
+                <div class="share-buttons hidden" id="shareButtons">
+                    <button id="downloadBtn" class="btn" data-en="Download" data-hi="डाउनलोड">Download</button>
+                    <button id="whatsappShare" class="btn btn-whatsapp" data-en="Share on WhatsApp" data-hi="व्हाट्सएप पर शेयर करें">Share on WhatsApp</button>
+                    <button id="facebookShare" class="btn btn-facebook" data-en="Share on Facebook" data-hi="फेसबुक पर शेयर करें">Share on Facebook</button>
+                    <button id="twitterShare" class="btn btn-twitter" data-en="Share on Twitter" data-hi="ट्विटर पर शेयर करें">Share on Twitter</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="holi-info">
+            <h3 data-en="About Holi Festival" data-hi="होली त्योहार के बारे में">About Holi Festival</h3>
+            <p data-en="Holi is a popular ancient Hindu festival, also known as the 'Festival of Love', the 'Festival of Colors', and the 'Festival of Spring'. It celebrates the eternal and divine love of Radha and Krishna. The festival also signifies the triumph of good over evil." data-hi="होली एक प्रसिद्ध प्राचीन हिंदू त्योहार है, जिसे 'प्रेम का त्योहार', 'रंगों का त्योहार', और 'वसंत का त्योहार' भी कहा जाता है। यह राधा और कृष्ण के अनंत और दिव्य प्रेम का जश्न मनाता है। यह त्योहार बुराई पर अच्छाई की जीत का प्रतीक भी है।">Holi is a popular ancient Hindu festival, also known as the "Festival of Love", the "Festival of Colors", and the "Festival of Spring". It celebrates the eternal and divine love of Radha and Krishna. The festival also signifies the triumph of good over evil.</p>
+            <p data-en="During this vibrant celebration, people play with colors, water, have parties, and dance under water sprinklers. Special Holi delicacies include gujiya, malpuas, mathri, puran poli and more." data-hi="इस जीवंत उत्सव के दौरान, लोग रंगों के साथ खेलते हैं, पानी से खेलते हैं, पार्टियां करते हैं, और पानी के फुहारों के नीचे नाचते हैं। होली के विशेष पकवानों में गुजिया, मालपुआ, मठरी, पुरन पोली और अधिक शामिल हैं।">During this vibrant celebration, people play with colors, water, have parties, and dance under water sprinklers. Special Holi delicacies include gujiya, malpuas, mathri, puran poli and more.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p data-en="© 2025 Holi Festival Celebration | Created by DevNishantHub" data-hi="© 2025 होली उत्सव | DevNishantHub द्वारा निर्मित">© 2025 Holi Festival Celebration | Created by DevNishantHub</p>
+        <p data-en="Share the joy of colors with your loved ones!" data-hi="अपने प्रियजनों के साथ रंगों की खुशी साझा करें!">Share the joy of colors with your loved ones!</p>
+    </footer>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
